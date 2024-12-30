@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dswfgv6mss4xy"]
+
+[ext_resource type="PackedScene" uid="uid://jpb2w42qjfco" path="res://rigid_body_2d.tscn" id="2_lgx53"]
+[ext_resource type="Texture2D" uid="uid://vfipae8xedjq" path="res://boundary_circle.png" id="2_vwu5n"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_lgx53")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="BoundaryCircle" type="Sprite2D" parent="."]
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_vwu5n")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(2.15, 2.15)
+build_mode = 1
+polygon = PackedVector2Array(-98, -99, -72, -119, -33, -134, -6, -139, 39, -134, 65, -121, 102, -98, 135, -44, 140, 14, 117, 80, 73, 119, 26, 136, -13, 139, -76, 121, -111, 84, -137, 36, -139, -22, -122, -68)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://jpb2w42qjfco"]
+
+[ext_resource type="Script" path="res://rigid_body_2d.gd" id="1_fsf7d"]
+[ext_resource type="Texture2D" uid="uid://dnv5i41iwd21x" path="res://ship2_glow.png" id="2_fegfh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_78o2x"]
+radius = 13.0
+
+[node name="RigidBody2D" type="RigidBody2D"]
+gravity_scale = 0.0
+center_of_mass_mode = 1
+center_of_mass = Vector2(0, -0.07)
+linear_damp = 0.5
+angular_damp = 0.05
+script = ExtResource("1_fsf7d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_fegfh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_78o2x")

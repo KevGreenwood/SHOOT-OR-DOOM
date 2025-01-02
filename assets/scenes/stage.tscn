@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dswfgv6mss4xy"]
 
-[ext_resource type="PackedScene" uid="uid://jpb2w42qjfco" path="res://rigid_body_2d.tscn" id="2_lgx53"]
+[ext_resource type="PackedScene" uid="uid://jpb2w42qjfco" path="res://assets/scenes/player.tscn" id="2_lgx53"]
 [ext_resource type="Texture2D" uid="uid://vfipae8xedjq" path="res://boundary_circle.png" id="2_vwu5n"]
 
 [node name="StaticBody2D" type="StaticBody2D"]

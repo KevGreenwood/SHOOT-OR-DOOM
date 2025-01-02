@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="The 95% Error"
-run/main_scene="res://stage.tscn"
+config/name="SHOOT OR DOOM"
+run/main_scene="res://assets/scenes/stage.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -40,5 +40,4 @@ right={
 
 [physics]
 
-2d/physics_engine="GodotPhysics2D"
 2d/solver/solver_iterations=6
